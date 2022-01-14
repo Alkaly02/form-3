@@ -1,0 +1,153 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+main{
+	width: 60%;
+	margin: auto;
+	padding: 2rem;
+	font-family: 'Roboto', sans-serif;
+	background-color:rgba(105, 105, 105, 1);
+	color: #E1E6FA;
+}
+main > h1{
+	margin: 1rem 0 0.5rem 0.9rem;
+	padding: 0;
+}
+h1 + p{
+	margin: 0 0 3rem 0.9rem;
+	padding: 0;
+}
+section{
+	margin: 0 0 1rem 0;
+}
+h3{
+	margin: 1rem 0 0.5rem 0;
+}
+#full-name .name-container{
+	display: flex;
+	justify-content: space-between;
+}
+.name-label input{
+	display: block;
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom: 0.5rem;
+	outline: none;
+	font-size: 1.1em;
+	color: #aaa;
+}
+
+/*======= sexe-birth - section ========*/
+#sexe-birth, #location, #email-phone{
+	display: flex;
+	justify-content: space-between;
+}
+#sexe, #birth, #location fieldset, #email-phone fieldset{
+	width: 50%;
+}
+#sexe select{
+	width: 100%;
+	padding: 0.5rem 0.5rem;
+	font-size: 1.1em;
+	color: #aaa;
+	outline: none;
+}
+#birth input{
+	width: 100%;
+	padding: 0.35em;
+	margin-right: 0.5rem;
+	color: #aaa;
+	outline: none;
+	font-size: 1.1rem;
+}
+input[type="submit"]{
+	margin: 1rem 0 0 1rem;
+	padding: 0.5rem;
+	font-size: 1.1em;
+	color: #aaa;
+	cursor: pointer;
+}
+input + label{
+	font-size: 0.9em;
+}
+fieldset{
+	border: none;
+}
+
+@media(max-width: 980px){
+	main{
+		width: 80%
+	}
+}
+@media(max-width: 750px){
+	main{
+		width: 90%
+	}
+}
+@media(max-width: 650px){
+	main{
+		width: 100%;
+		margin: 0;
+		padding: 0.5rem;
+	}
+	input[type="submit"]{
+		margin: 1rem 0 0 0;
+		padding: 0.5rem;
+		font-size: 1.1em;
+		color: #aaa;
+		cursor: pointer;
+	}
+}
+@media(max-width: 625px){
+	h1, p{
+		text-align: center;
+		font-size: 1.5em;
+		padding:0;
+		margin: 0;
+	}
+	#full-name .name-container{
+		flex-direction: column;
+	}
+	#full-name .name-container .name-label{
+		margin-bottom: 0.9rem;
+	}
+	#full-name h3, #adresse h3{
+		display: none;
+	}
+	#sexe-birth, #location, #email-phone{
+		flex-direction: column;
+	}
+	#sexe, #birth,  #location fieldset, #email-phone fieldset{
+		width: 100%;
+	}
+	.name-label{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.name-label label{
+		font-size: 1.1em;
+		font-weight: bold;
+		margin-bottom: 0.3rem;
+	}
+	#full-name{
+		margin-bottom: 0;
+	}
+	#email-phone .name-label{
+		flex-direction: column;
+	}
+	#sexe-birth fieldset, #location fieldset{
+		margin-bottom: 0.5rem;
+	}
+	#adresse{
+		margin-top: 0.5rem;
+	}
+	#email-phone{
+		margin-top: 0;
+	}
+	input[type="submit"]{
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+}

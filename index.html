@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Students Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- google font link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<h1>Formulaire d'inscription etudiants</h1>
+		<p>Remplissez soigneusementn le formulaire d'inscription</p>
+		<form action="#">
+			<!-- =========== full Name - section =========== -->
+			<section id="full-name">
+				<fieldset>
+					<h3>Nom complet</h3>
+					<div class="name-container">
+						<div class="name-label">
+							<input id="firstName" type="text">
+							<label for="firstName">Prenom</label>
+						</div>
+						<div class="name-label">
+							<input id="secondName" type="text">
+							<label for="secondName" for="">Deuxieme nom</label>
+						</div>
+						<div class="name-label">
+							<input id="lastName" type="text">
+							<label for="lastName" for="">Nom de famille</label>
+						</div>
+					</div>
+				</fieldset>
+			</section>
+
+			<!-- ============ sexe and birthday - section ======== -->
+			<section id="sexe-birth">
+				<fieldset id="sexe">
+					<h3>Sexe</h3>
+					<select>
+						<option value="Femme" selected>Femme</option>
+						<option value="Homme">Homme</option>
+					</select>
+				</fieldset>
+				<fieldset id="birth">
+					<h3>Date de naissance</h3>
+					<input type="date">
+				</fieldset>
+			</section>
+
+			<!-- ============ adresse - section ============ -->
+			<section id="adresse">
+				<fieldset>
+					<h3>Adresse</h3>
+					<div class="name-label">
+						<input id="adresse" type="text">
+						<label for="adresse">Adresse</label>
+					</div>
+				</fieldset>
+			</section>
+
+			<!-- ============ ville-departement - section =========== -->
+			<section id="location">
+				<fieldset class="name-label">
+					<input id="city" type="text" name="city">
+					<label for="city">Ville</label>
+				</fieldset>
+				<fieldset class="name-label">
+					<input id="departement" type="text" name="departement">
+					<label for="departement">Departement</label>
+				</fieldset>
+			</section>
+
+			<!-- ============== postal-code - section =============== -->
+			<section id="Postal-code">
+				<fieldset>
+					<div class="name-label">
+						<input id="adresse" type="number">
+						<label for="adresse">Code Postal</label>
+					</div>
+				</fieldset>
+			</section>
+
+			<!-- ============ email and phone number - section ========== -->
+			<section id="email-phone">
+				<fieldset id="email" class="name-label">
+					<h3>E-mail</h3>
+					<input type="email" name="email">
+				</fieldset>
+				<fieldset id="phone" class="name-label">
+					<h3>Numero de telephone</h3>
+					<input type="number" name="phone">
+				</fieldset>
+			</section>
+			<input type="submit" value="Soumettre" name="submit">
+		</form>
+	</main>
+</body>
+</html>
